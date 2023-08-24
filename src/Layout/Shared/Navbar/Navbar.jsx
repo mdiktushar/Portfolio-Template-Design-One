@@ -1,4 +1,5 @@
 import React from "react";
+import logo from '../../../assets/img/Logo.png'
 
 const Navbar = () => {
   return (
@@ -44,7 +45,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="btn btn-ghost normal-case text-xl">
+            <img src={logo} alt="" width={`150px`}/>
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
