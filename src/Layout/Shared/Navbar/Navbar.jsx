@@ -1,7 +1,25 @@
 import React from "react";
-import logo from '../../../assets/img/Logo.png'
+import logo from "../../../assets/img/Logo.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const list = (
+    <>
+      <li>
+        <NavLink to={`/`}>Home</NavLink>
+      </li>
+      <li>
+        <NavLink to={`/portfolio`}>Portfolio</NavLink>
+      </li>
+      <li>
+        <NavLink to={`about-me`}>About me</NavLink>
+      </li>
+      <li>
+        <NavLink to={`testiomonials`}>Testimonials</NavLink>
+      </li>
+    </>
+  );
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -26,54 +44,20 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+            {list}
           </ul>
         </div>
         <a className="btn btn-ghost normal-case text-xl">
-            <img src={logo} alt="" width={`150px`}/>
+          <img src={logo} alt="" width={`150px`} />
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li tabIndex={0}>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
+        <ul className="menu menu-horizontal px-1">{list}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <button className="btn bg-transparent border-spacing-1 border-[#5E3BEE] rounded-lg mr-10 text-[10px] text-[#5E3BEE]">
+          Contact me
+        </button>
       </div>
     </div>
   );
