@@ -35,10 +35,10 @@ const Expertises = () => {
     );
   }
   return (
-    <div className="m-24">
-      <p>My Skills</p>
-      <h2>My Expertise</h2>
-      <div className="flex gap-5">
+    <div className="m-16 md:m-18 lg:m-24">
+      <p className="font-bold text-xs">My Skills</p>
+      <h2 className="mt-2 mb-12 font-bold text-3xl">My Expertise</h2>
+      <div className="grid grid-cols-4 gap-5">
         {expertises.map((expertise, index) => (
           <Expertise key={index} expertise={expertise} />
         ))}
