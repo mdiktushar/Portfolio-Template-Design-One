@@ -1,0 +1,22 @@
+[
+  {
+    "imageUrl": "https://example.com/image1.jpg",
+    "name": "Item 1",
+    "description": "Description for Item 1"
+  },
+  {
+    "imageUrl": "https://example.com/image2.jpg",
+    "name": "Item 2",
+    "description": "Description for Item 2"
+  },
+  {
+    "imageUrl": "https://example.com/image3.jpg",
+    "name": "Item 3",
+    "description": "Description for Item 3"
+  },
+  {
+    "imageUrl": "https://example.com/image4.jpg",
+    "name": "Item 4",
+    "description": "Description for Item 4"
+  }
+]
