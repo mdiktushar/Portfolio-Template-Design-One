@@ -3,24 +3,47 @@
 @tailwind utilities;
 
 :root {
-    --primary-color: #5E3BEE;
+  --primary-color: #5e3bee;
 }
 
 .primary-color {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .bg-primary {
-    background: var(--primary-color);
+  background: var(--primary-color);
 }
 
 .active {
-    color: var(--primary-color);
-    background: none;
+  color: var(--primary-color);
+  background: none;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .banner-text {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* media query */
+@media screen and (max-width: 768px) {
+  /* Your CSS styles for small screens go here */
+  .banner {
     flex-direction: column;
-    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Your CSS styles for small screens go here */
+}
+
+@media screen and (min-width: 1025px) {
+  /* Your CSS styles for large screens go here */
 }
