@@ -35,12 +35,12 @@ const Expertises = () => {
     );
   }
   return (
-    <div>
+    <div className="m-24">
       <p>My Skills</p>
       <h2>My Expertise</h2>
-      <div>
+      <div className="flex gap-5">
         {expertises.map((expertise, index) => (
-          <Expertise key={index} />
+          <Expertise key={index} expertise={expertise} />
         ))}
       </div>
     </div>

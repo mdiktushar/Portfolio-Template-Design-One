@@ -1,22 +1,22 @@
 [
   {
-    "imageUrl": "https://example.com/image1.jpg",
-    "name": "Item 1",
-    "description": "Description for Item 1"
+    "imageUrl": "./img/e1.png",
+    "name": "Steategy & Direction",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
   },
   {
-    "imageUrl": "https://example.com/image2.jpg",
-    "name": "Item 2",
-    "description": "Description for Item 2"
+    "imageUrl": "./img/e2.png",
+    "name": "Branding & Logo",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
   },
   {
-    "imageUrl": "https://example.com/image3.jpg",
-    "name": "Item 3",
-    "description": "Description for Item 3"
+    "imageUrl": "./img/e3.png",
+    "name": "UI & UX Design",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
   },
   {
-    "imageUrl": "https://example.com/image4.jpg",
-    "name": "Item 4",
-    "description": "Description for Item 4"
+    "imageUrl": "./img/e4.png",
+    "name": "Webflow Development",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
   }
 ]
