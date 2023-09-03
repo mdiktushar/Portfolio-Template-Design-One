@@ -31,6 +31,14 @@
   justify-content: center;
 }
 
+.Project-button {
+  border-bottom: solid 1px black;
+}
+
+.Project-button:hover {
+  border-bottom: solid 1px #0a49a7;
+}
+
 
 /* media query */
 @media screen and (max-width: 768px) {
