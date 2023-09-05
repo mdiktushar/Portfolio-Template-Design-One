@@ -36,7 +36,7 @@ const Portfolio = () => {
         </button>
       </div>
 
-      <div className="flex flex-col items-center lg:flex-row gap-4">
+      <div className="flex flex-col items-center lg:flex-row lg:justify-center gap-4">
         {projects.map((project, index) => (
           <Project key={index} data={project} />
         ))}
