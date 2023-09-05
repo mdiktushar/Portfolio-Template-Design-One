@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Project from "./Project/Project";
 
 const Portfolio = () => {
+  const [projects, setProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("./data/Portfolio.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data))
+      .then(setIsLoading(false));
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="flex justify-center">
+        <span className="loading loading-bars loading-xs"></span>
+        <span className="loading loading-bars loading-sm"></span>
+        <span className="loading loading-bars loading-md"></span>
+        <span className="loading loading-bars loading-lg"></span>
+      </div>
+    );
+  }
+
   return (
     <div className="m-16 md:m-18 lg:m-24">
       <div className="flex justify-between items-center mb-20 ">
@@ -15,7 +36,11 @@ const Portfolio = () => {
         </button>
       </div>
 
-      <Project />
+      <div className="flex flex-col items-center lg:flex-row gap-4">
+        {projects.map((project, index) => (
+          <Project key={index} data={project} />
+        ))}
+      </div>
     </div>
   );
 };

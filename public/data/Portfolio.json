@@ -1,0 +1,18 @@
+[
+    {
+      "imgUrl": "./img/project1.png",
+      "name": "Ahus",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    },
+    {
+      "imgUrl": "./img/project2.png",
+      "name": "App Dashboard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    },
+    {
+      "imgUrl": "./img/project3.png",
+      "name": "Easy Rent",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+    }
+  ]
+  

@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center m-16 md:m-18 lg:m-24 gap-20">
+    <div className="flex flex-col lg:flex-row items-center m-16 md:m-18 lg:m-24 gap-20">
       <img src="./img/AboutMe.jpg" width={`600px`} alt="" />
       <div className="max-w-3xl">
         <p className="font-bold mb-2">About</p>
