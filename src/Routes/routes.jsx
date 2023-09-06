@@ -10,7 +10,7 @@ const routes = createBrowserRouter([
             {
                 path:`/`,
                 element: <Home />,
-                loader: async () => await fetch(`./data/feecback.json`),
+                loader: async () => await fetch(`./data/feedback.json`),
             }
         ]
     }
