@@ -1,0 +1,24 @@
+[
+    {
+      "imgURL": "https://example.com/image1.jpg",
+      "name": "John Doe",
+      "position": "Software Engineer",
+      "feedback": "John is a great team player and always delivers quality work.",
+      "rating": 5
+    },
+    {
+      "imgURL": "https://example.com/image2.jpg",
+      "name": "Jane Smith",
+      "position": "Product Manager",
+      "feedback": "Jane is a highly organized and efficient leader.",
+      "rating": 4.5
+    },
+    {
+      "imgURL": "https://example.com/image3.jpg",
+      "name": "Mike Johnson",
+      "position": "Sales Representative",
+      "feedback": "Mike consistently exceeds his sales targets.",
+      "rating": 4.8
+    }
+  ]
+  

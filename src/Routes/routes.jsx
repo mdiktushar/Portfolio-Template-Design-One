@@ -9,7 +9,8 @@ const routes = createBrowserRouter([
         children: [
             {
                 path:`/`,
-                element: <Home />
+                element: <Home />,
+                loader: async () => await fetch(`./data/feecback.json`),
             }
         ]
     }
