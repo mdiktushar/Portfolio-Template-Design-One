@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Portfolio from './components/Portfolio/Portfolio';
 import CustomerTestimonials from './components/CustomerTestimonials/CustomerTestimonials';
 import { useLoaderData } from 'react-router-dom';
+import Contact from './components/Contact/Contact';
 
 const Home = () => {
     const feedbacks = useLoaderData();
@@ -15,6 +16,7 @@ const Home = () => {
             <AboutMe />
             <Portfolio />
             <CustomerTestimonials feedbacks={feedbacks} />
+            <Contact />
         </div>
     );
 };
