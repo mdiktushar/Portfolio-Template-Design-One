@@ -7,14 +7,14 @@ import CustomerTestimonials from './components/CustomerTestimonials/CustomerTest
 import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
-    const feecbacks = useLoaderData();
+    const feedbacks = useLoaderData();
     return (
         <div>
             <Banner />
             <Expertises />
             <AboutMe />
             <Portfolio />
-            <CustomerTestimonials feecbacks={feecbacks} />
+            <CustomerTestimonials feedbacks={feedbacks} />
         </div>
     );
 };

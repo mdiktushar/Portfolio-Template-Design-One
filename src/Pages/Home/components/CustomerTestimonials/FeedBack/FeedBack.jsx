@@ -15,26 +15,26 @@ const customStyles = {
   inactiveFillColor: "#98f5f4",
 };
 
-const FeedBack = () => {
+const FeedBack = ({ data }) => {
+  const { imgURL, name, position, feedback, rating } = data;
   return (
-    <div className="border-2 border-[#006B6A] max-w-[330px] rounded-md p-6">
+    <div className="border-2 border-[#006B6A] max-w-[430px] rounded-md p-6">
       <Rating
-      className="mb-4"
+        className="mb-4"
         style={{ maxWidth: 100 }}
-        value={3}
+        value={rating}
         readOnly
         itemStyles={customStyles}
       />
-      <p className="text-xs mb-4">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique. Duis cursus, mi quis viverra.
+      <p className="text-sm mb-4">
+        {feedback}
       </p>
       <div className="flex items-center gap-5">
-            <img src="./img/Avatar2.png" alt="" width={'50px'}/>
-            <div>
-                <h6 className="font-bold text-sm">Name</h6>
-                <p className="text-xs">kdiv diod</p>
-            </div>
+        <img src={imgURL} alt="" width={"50px"} />
+        <div>
+          <h6 className="font-bold text-base">{name}</h6>
+          <p className="text-xs">{position}</p>
+        </div>
       </div>
     </div>
   );
