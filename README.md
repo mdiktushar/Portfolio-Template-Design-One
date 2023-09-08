@@ -1,3 +1,23 @@
+# Installation process
+
+Use the following command to clone the repository to your local machine:
+
+```
+    git clone https://github.com/mdiktushar/Portfolio-Template-Design-One.git
+```
+After cloning the project, you'll need to install its dependencies. This project uses Node.js and npm for managing dependencies. Run the following command to install the required packages:
+```
+    npm install
+```
+or if you prefer using Yarn:
+``` 
+    yarn install
+```
+
+# Live website link
+
+Visite the live wensite <a href="https://protfolio-one-by-mdiktushar.netlify.app/" target="_blank" >Click</a>
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
