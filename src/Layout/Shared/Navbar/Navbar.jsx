@@ -12,10 +12,10 @@ const Navbar = () => {
         <NavLink to={`/portfolio`}>Portfolio</NavLink>
       </li>
       <li>
-        <NavLink to={`about-me`}>About me</NavLink>
+        <NavLink to={`/about-me`}>About me</NavLink>
       </li>
       <li>
-        <NavLink to={`testiomonials`}>Testimonials</NavLink>
+        <NavLink to={`/testiomonials`}>Testimonials</NavLink>
       </li>
     </>
   );
